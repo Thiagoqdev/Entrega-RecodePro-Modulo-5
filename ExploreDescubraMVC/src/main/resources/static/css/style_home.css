@@ -1,0 +1,342 @@
+body {
+	font-family: "Open Sans", "Sans-serif";
+	background: grey;
+}
+
+.area-de-busca {
+	background-image: url("/imagens/primeira-bg.jpg");
+	height: 700px;
+}
+
+.titulo_de_busca {
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titulo_de_busca>h1 {
+	color: white;
+	font-size: 46px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.form-busca {
+	height: 200px;
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 5%;
+	background: rgba(219, 214, 214, 0.87);
+	border-radius: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.buscar_destino {
+	width: 300px;
+	padding-top: 50px;
+	padding-left: 40px;
+}
+
+.form-data-viagem {
+	width: 300px;
+	padding-top: 50px;
+	padding-left: 40px;
+}
+
+.form-min-max {
+	width: 300px;
+	padding-top: 50px;
+	padding-left: 40px;
+}
+
+.titulo-destinos-mais-buscados {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.grid-card-promoção {
+	margin-top: 50px;
+}
+
+.card-img-top img {
+	width: 320px;
+	height: 200px;
+}
+/* 
+.card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+} */
+.bg-footer {
+	background: url("/imagens/bg\ footer.jpg") center;
+	height: 550px;
+}
+
+.text-light {
+	color: white;
+	font-size: 30px !important;
+}
+
+.pesquisa-footer {
+	margin-top: 60px !important;
+}
+
+.barra-de-apresentação {
+	height: 250px !important;
+	margin-top: 30px;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 50px !important;
+	background: rgba(255, 255, 255, 0.904) !important;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#logo-company img {
+	width: 50px;
+}
+
+.informações-site {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.rodape__social {
+	width: 240px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.redes-sociais {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cartoes-aceitos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 35px;
+}
+
+.desenvolvimento {
+	background-color: rgb(27, 113, 226);
+	color: white;
+	height: 35px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative !important;
+	bottom: 0;
+}
+
+ul {
+	padding-left: 0px !important;
+}
+
+.ri-book-2-line {
+	font-size: 50px;
+}
+
+.ri-file-edit-line {
+	font-size: 20px;
+	color: blue;
+}
+
+.ri-delete-bin-2-line {
+	font-size: 20px;
+	color: red;
+}
+
+/*-------------------------CONTATO------------------------------------------*/
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: rgb(179, 118, 6);
+	transform: scale(1.2);
+}
+
+.formulario {
+	background: rgba(91, 143, 194, 0.862) !important;
+	width: 100%;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4%;
+}
+
+.form-fale-conosco {
+	display: flex;
+	justify-content: center;
+	margin-top: 4% !important;
+}
+
+.formulario-contato {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.preferencia-atendimento {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.form-fale-conosco {
+	background-image: url(../imagens/Design\ bg\ opacity.png);
+}
+
+/*-------------------------------------------Destinos ------------------------------------------------------*/
+.carrosel-destinos {
+	width: 70% !important;
+}
+
+.titulo-destinos-mais-buscados-page-destino {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#Titulo-destinos-cards {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+/* ------------------------------------ Promoções--------------------------------- */
+#titulo-promo {
+	text-align: center;
+}
+
+#promo {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h1, h2 {
+	font-family: "Orbitron", sans-serif !important;
+}
+/* ------------------------------------ Clientes MVC---------------------- */
+.cliente-crud {
+	width: 100%;
+	height: 1200px;
+}
+
+/* ------------------------------------ Responsividade--------------------------------- */
+@media screen and (max-width: 3200px) {
+	.form-control, .form-min-max .form-range {
+		width: 80% !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa_conteudo, .video {
+		width: auto;
+	}
+	h1 {
+		text-align: center;
+	}
+	nav {
+		position: static;
+	}
+	.lista-beneficios, .img-beneficios {
+		width: 100%;
+	}
+}
+
+@media ( max-width : 771px) {
+	.form-busca {
+		flex-direction: column;
+		width: 90%;
+		height: 400px;
+		align-items: center;
+	}
+	.titulo_de_busca {
+		text-align: center;
+	}
+	.titulo_de_busca>h1 {
+		font-size: 30px;
+	}
+	.area-de-busca {
+		height: 840px;
+	}
+	.bg-footer {
+		height: 800px;
+	}
+	.barra-de-apresentação {
+		flex-direction: column;
+		margin-right: 10%;
+		width: 80%;
+		height: 450px !important;
+	}
+	.informações-site {
+		flex-direction: column;
+	}
+	.cartoes-aceitos {
+		margin-top: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	.redes-sociais {
+		margin-top: 20px;
+	}
+	.text-light {
+		margin-bottom: 20px !important;
+		text-align: center;
+	}
+}

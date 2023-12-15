@@ -1,0 +1,35 @@
+1702191082442	Delete element
+1702191088136	Delete element
+1702191109067	Rename type 'Home'
+1702210155795	Rename type 'PedidoController'
+1702210177037	Rename type 'UsuarioController'
+1702210461196	Rename type 'ClienteRepository'
+1702210466243	Rename type 'Cliente'
+1702210472264	Rename type 'PacoteController'
+1702210477823	Rename type 'ClienteController'
+1702210490749	Rename resource 'cliente'
+1702210652624	Rename package 'com.ExploreDescubra.controller'
+1702210760969	Rename type 'Pedidos'
+1702340476948	Rename compilation unit 'ClienteRepository.java'
+1702352862009	Rename resource 'create.jsp'
+1702352870478	Rename resource 'index.jsp'
+1702352877337	Rename resource 'update.jsp'
+1702352981308	Rename resource 'index.jsp'
+1702352987408	Rename resource 'create.jsp'
+1702352993669	Rename resource 'update.jsp'
+1702419924528	Rename resource 'create.jsp'
+1702419930374	Rename resource 'index.jsp'
+1702419936031	Rename resource 'update.jsp'
+1702420104595	Rename resource 'indexhtml'
+1702443458359	Rename resource 'index.html'
+1702443499625	Rename resource 'clientes.html'
+1702447926249	Rename type 'Clientes'
+1702447994014	Rename type 'ClientesRepository'
+1702449054019	Delete element
+1702449060316	Delete element
+1702452859790	Rename type 'Pacotes'
+1702452884202	Rename type 'PacotesRepository'
+1702457725412	Rename type 'Compras'
+1702457735632	Rename type 'ComprasRepository'
+1702460471511	Delete element
+1702460482736	Delete element

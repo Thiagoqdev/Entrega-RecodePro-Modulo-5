@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<link th:href="@{/css/reset.css}" rel="stylesheet" />
+	<link th:href="@{/css/style_home.css}" rel="stylesheet" />
+	<html xmlns:th="http://www.thymeleaf.org">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+		rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet" />
+	<title>Explore e Descubra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/"><img th:src="@{/imagens/logoSite.png}" alt="Logo" width="40"
+						height="30" class="d-inline-block align-text-top" /> >Explore e Descubra </a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active" aria-current="page" th:href="@{/}">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" th:href="@{/Destinos}">Destino</a>
+						</li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page"
+								th:href="@{/Promoções}">Promoções</a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page"
+								th:href="@{/Contato}">Contato</a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page"
+								th:href="@{/Cadastro}">Cadastre-se</a></li>
+					</ul>
+
+					<div class="dropdown">
+						<a class="btn btn-warning dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Administrador </a>
+
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" th:href="@{/clientes}">Clientes</a></li>
+							<li><a class="dropdown-item" th:href="@{/pacotes}">Pacotes</a></li>
+							<li><a class="dropdown-item" th:href="@{/compras}">Compras</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="area-de-busca">
+			<div class="titulo_de_busca">
+				<h1>
+					Encontre <b>o explore e descubra</b> das suas ferias!
+				</h1>
+			</div>
+			<div class="form-busca">
+				<div class="buscar_destino">
+					<label for="exampleDataList" class="form-label">Selecione
+						seu proximo destino!</label> <input class="form-control" list="datalistOptions"
+						id="exampleDataList" placeholder="Qual cidade você vai ?" />
+					<datalist id="datalistOptions">
+						<option value="San Francisco"></option>
+						<option value="New York"></option>
+						<option value="Seattle"></option>
+						<option value="Los Angeles"></option>
+						<option value="Chicago"></option>
+					</datalist>
+				</div>
+				<div class="form-data-viagem">
+					<label for="exampleDataList" class="form-label">Selecione a
+						data desejada:</label> <input type="date" class="form-control" list="datalistOptions"
+						id="exampleDataList" placeholder="Type to search..." />
+				</div>
+				<div class="form-min-max">
+					<label for="customRange2" class="form-label">Preço maximo:</label>
+					<input type="range" class="form-range" min="0" max="100" id="customRange2" />
+				</div>
+			</div>
+		</section>
+		<div class="titulo-destinos-mais-buscados">
+			<h2>Destinos mais buscados</h2>
+		</div>
+		<section class="cards-destinos">
+			<div class="container text-center my-4">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+					<div class="col">
+						<div class="card">
+							<img th:src="@{/imagens/Jalapao.jpg}" class="card-img-top" alt="Imagem do Jalapão" />
+							<div class="card-body">
+								<h5 class="card-title">Jalapão – Tocantins</h5>
+								<p class="card-text">O Jalapão é uma região de beleza
+									natural extraordinária no estado do Tocantins, Brasil, famosa
+									por suas dunas de areia, rios cristalinos.</p>
+								<a href="#" class="btn btn-info text-white">Eu quero ir</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img th:src="@{imagens/Caampo do jordão.jpeg}" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Campo do jordão</h5>
+								<p class="card-text">Campos do Jordão é uma cidade charmosa
+									na Serra da Mantiqueira, São Paulo, conhecida por seu clima
+									frio, arquitetura europeia.</p>
+								<a href="#" class="btn btn-primary"> Eu quero ir</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img th:src="@{imagens/Bonito ms.jpg}" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Mato Grosso do Sul</h5>
+								<p class="card-text">Mato Grosso do Sul: Estado na região
+									Centro-Oeste do Brasil, famoso pelo Pantanal e sua
+									biodiversidade. Capital: Campo Grande.</p>
+								<a href="#" class="btn btn-info text-white">Eu quero ir</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card">
+							<img th:src="@{imagens/Paraty, Rio de Janeiro.jpg}" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Paraty, Rio de Janeiro</h5>
+								<p class="card-text">Paraty, Rio de Janeiro: Cidade
+									histórica com arquitetura colonial e belas praias, ilhas e
+									cachoeiras na região.</p>
+								<a href="#" class="btn btn-primary">Eu quero ir</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img th:src="@{imagens/Rota das Emoções.jpg}" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Rota das Emoções</h5>
+								<p class="card-text">Trajeto turístico que conecta Lençóis
+									Maranhenses, Delta do Parnaíba e Jericoacoara, proporcionando
+									uma jornada emocionante por paisagens.</p>
+								<a href="#" class="btn btn-info text-white">Eu quero ir</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img th:src="@{imagens/Serra da Mantiqueira, SP.jpg}" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Serra da Mantiqueira</h5>
+								<p class="card-text">Serra da Mantiqueira: Cadeia montanhosa
+									no Sudeste do Brasil, com paisagens encantadoras e opções para
+									ecoturismo.</p>
+								<a href="#" class="btn btn-primary">Eu quero ir</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="bg-footer">
+		<nav class="navbar bg-transparent">
+			<div class="container-fluid d-flex justify-content-around pesquisa-footer">
+				<a class="navbar-brand text-light">Explore e Descubra</a>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="" aria-label="Search" />
+					<button class="btn btn-info" type="submit">procurar</button>
+				</form>
+			</div>
+		</nav>
+		<div class="barra-de-apresentação">
+			<div class="informações-site">
+				<h3>Galeria de aventuras!</h3>
+				<img id="logo-company" th:src="@{/imagens/logo-company.jpg}" alt="logo do site" />
+			</div>
+			<div class="redes-sociais">
+				<h3>Redes Sociais</h3>
+				<ul class="rodape__social">
+					<li><a href="" class="rodape__midia"></a><img th:src="@{imagens/facebook.png}"
+							alt="icone do facebook" /></li>
+					<li><a href="" class="rodape__midia"></a><img th:src="@{imagens/twitter.png}"
+							alt="icone do twitter" /></li>
+					<li><a href="" class="rodape__midia"></a><img th:src="@{imagens/instagram.png}"
+							alt="icone do instagram" /></li>
+				</ul>
+			</div>
+			<nav class="formas-de-pagamento">
+				<div class="cartoes-aceitos">
+					<h3>Formas de Pagamento</h3>
+					<ul class="rodape__navegacao">
+						<li class="rodape__link"><a href="#"><img th:src="@{imagens/cards, credit icon icon.png}"
+									alt="" /></a></li>
+						<li class="rodape__link"><a href="#"><img src="@{imagens/Amazon, Payment icon icon.png}"
+									alt="" /></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="desenvolvimento">Desenvolvido por Thiago Queiroz -
+			2023</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
