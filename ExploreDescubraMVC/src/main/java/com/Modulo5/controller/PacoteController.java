@@ -21,7 +21,7 @@ public class PacoteController {
 	@Autowired
 	private PacoteRepository pacoteRepository;
 
-	// lista todos os dados do banco pacotes
+	
 	@GetMapping
 	public ModelAndView listar() {
 		ModelAndView modelAndView = new ModelAndView("pacotes/index.html");
